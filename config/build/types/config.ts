@@ -3,6 +3,11 @@ export interface BuildPaths {
     entry: string
     build: string
     html: string
+    src: string
+}
+export enum BuildEnvVariants {
+    production = 'production',
+    development = 'development'
 }
 export interface BuildEnv {
     mode: BuildMode
@@ -13,5 +18,4 @@ export interface BuildOptions {
     mode: BuildMode
     paths: BuildPaths
     isDev: boolean
-
 }

@@ -5,6 +5,7 @@ export function buildDevServer(options: BuildOptions): WebpackConfiguration {
     return {
          port: options.port,
          open: true,
-         historyApiFallback: true
+         historyApiFallback: true,
+         hot: true
     }
 }
